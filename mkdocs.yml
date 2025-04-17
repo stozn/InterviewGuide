@@ -1,0 +1,59 @@
+site_name: 小林 x 图解计算机基础(搬运)
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
+  language: zh
+  font:
+    code: Roboto Mono
+
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: 切换到夜间模式
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: 切换到日间模式
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    # - navigation.expand
+    # - navigation.path
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      auto_title: true
+      anchor_linenums: true
+      linenums: true
+      line_spans: __span
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_css:
+  - assets/extra.css
